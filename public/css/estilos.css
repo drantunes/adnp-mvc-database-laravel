@@ -17,6 +17,21 @@ body {
     background-color: #f8f8f8;
 }
 
+.container .tag_header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .tag_header h2 {
+    font-size: 2em;
+    color: #727272
+}
+
+.container .tag_header h2 span {
+    font-weight: bold;
+    color: black
+}
+
 .trix-list ul,
 .trix-list ol {
     margin-left: 20px;
