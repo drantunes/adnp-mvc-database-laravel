@@ -41,7 +41,8 @@ class JobsController extends Controller
 
         $empresa = Company::firstOrCreate([
             'nome' => $request->input('empresa'),
-            'site' => $request->input('website')
+            'site' => $request->input('website'),
+            'user_id' => auth()->id()
         ]);
 
         $job = new Job();

@@ -41,6 +41,10 @@
                                     <span>{{ $job->salario }}</span>
                                 </li>
                                 <li>
+                                    <strong>Responsável</strong><br>
+                                    <span>{{ $job->company->user->name }}</span>
+                                </li>
+                                <li>
                                     <strong>Publicado</strong><br>
                                     <span>{{ $job->created_at->diffForHumans() }}</span>
                                 </li>

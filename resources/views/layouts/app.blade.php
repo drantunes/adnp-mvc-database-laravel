@@ -24,8 +24,13 @@
                         <img src="/images/Logo.svg" alt="Jobs PG" />
                     </a>
 
-                    @if(request()->path() != 'job/create')
                     <a href="/job/create" title="Adicionar Job" class="button__post">Adicionar Job</a>
+
+                    @if(auth()->check())
+                    <form method="POST" action="/logout">
+                        @csrf
+                        <button class="button_sair">Logout</button>
+                    </form>
                     @endif
 
                 </div>
